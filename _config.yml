@@ -12,7 +12,7 @@ github_repo: "https://github.com/gsh150801/gsh150801.github.io.git" # you code r
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/111.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -22,7 +22,7 @@ RSS: false
 # zhihu_username:     qiubaiying
 github_username:    gsh150801
 # facebook_username:  baiying.qiu.7
-# jianshu_username:   e71990ada2fd
+ jianshu_username:   08ad1136767a
 # twitter_username:   qiubaiying
 
 
@@ -97,18 +97,20 @@ service-worker: true
 
 
 # Friends
-#friends: [
+friends: [
 #    {
 #        title: "WY",
 #        href: "http://zhengwuyang.com"
-#    },{
-#        title: "简书·BY",
-#        href: "http://www.jianshu.com/u/e71990ada2fd"
-#    },{
+#    },
+{
+        title: "简书·BY",
+        href: "https://www.jianshu.com/u/08ad1136767a"
+    }
+#,{
 #        title: "Apple",
 #        href: "https://apple.com"
 #    },{
 #        title: "Apple Developer",
 #        href: "https://developer.apple.com/"
 #    }
-#]
+]
