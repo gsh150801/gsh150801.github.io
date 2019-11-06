@@ -4,7 +4,7 @@ SEOTitle: 盛晖的博客 | SH Blog
 header-img: img/post-bg-desk.jpg
 email: kvt97483@163.com
 description: "Every failure is leading towards success."
-keyword: "GSH, SH Blog, 盛晖的博客, shenghuiguan, 官盛晖, bioinformatics, ML, iPhone"
+keyword: "GSH, SH Blog, 盛晖的博客, shenghuiguan, 官盛晖, bioinformatics, ML"
 url: "http://gsh150801.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/gsh150801/gsh150801.github.io.git" # you code repository
@@ -22,7 +22,7 @@ RSS: false
 # zhihu_username:     qiubaiying
 github_username:    gsh150801
 # facebook_username:  baiying.qiu.7
- jianshu_username:   08ad1136767a
+jianshu_username:   08ad1136767a
 # twitter_username:   qiubaiying
 
 
