@@ -24,7 +24,7 @@ tags:
 3. 再安装vscode，然后在文件-首选项-设置里，把python.pythonPath一栏设置为你的anaconda的python解释器位置。可以装上中文插件和python拓展插件。
 4. 然后可以在vscode的终端里用conda命令安装所需的包
 
-![path](img/191115path.png)
+![path](/img/191115path.png)
 * 设置清华镜像
 ```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
