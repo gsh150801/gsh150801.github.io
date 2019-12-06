@@ -177,7 +177,7 @@ library(MAST)
 
 Macosko_cell_cycle_genes.txt文件包含一个不同细胞周期时相的标记基因列表。我们将会在之后的细胞周期分数部分用到。
 
-#### 文件名字符代码
+#### 文件名拆解组装
 ```
 # Set up data loading
 
@@ -304,6 +304,9 @@ adata.shape
 * 线粒体counts相对偏高可能是因为参与了呼吸过程；
 * 低counts和/或基因少可能对应静息期细胞群；
 * 高counts可能是体积较大的细胞。
+
+基于检查细胞完整性的考虑，QC也应该被执行；去除只有极少数细胞表达的基因（）
+
 ```
 # Quality control - calculate QC covariates
 adata.obs['n_counts'] = adata.X.sum(1)
