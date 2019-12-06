@@ -51,12 +51,11 @@ some parts come from: [回顾：单细胞入门-读一篇scRNA-seq综述](https:
 * cons: low accurancy(noise is still huge; information loss: some gene expression information will be droup)
 
 ***Single-cell RNA sequencing: Technical advancements and biological applications.*** 
-
+![data_analysisworkflow_of_scRNA-seq](/img/2019-11-25-single-cell-RNA-seq-analysis-workflow.png)
 #### workflow of common scRNA-seq:
-1. dissociation
-2. RNA RT to cDNA
-3. amplify cDNA
-3. prepartion of sequencing library
+1. single-cell dissociation(tissue digestration)
+2. single-cell isolation
+3. library construction(RNA RT to cDNA and amplified)
 4. sequencing
 5. single-cell expression profiles
 6. cell types identification
@@ -75,6 +74,18 @@ some parts come from: [回顾：单细胞入门-读一篇scRNA-seq综述](https:
 1. 组织切片
 
 2. 酶解法
+##### process
+single-cell dissociation: digestration tissue
+single-cell isolation: to profile the mRNA in each cell separately. plate-based techniuqes
+
+Generating single-cell data from a biological sample requires multiple steps. Typical workflows incorporate ***single-cell dissociation***, ***single-cell isolation***, ***library construction***, and ***sequencing***. We give a brief overview of these stages here. A more detailed explanation and comparison of different protocols can be found in Ziegenhain et al (2017); Macosko et al (2015); Svensson et al (2017).
+
+Input material for a single-cell experiment is typically obtained in the form of biological tissue samples. As a first step, *a single-cell suspension* is generated in a process called *single-cell dissociation* in which the **tissue is digested**.
+To **profile the mRNA in each cell separately**, cells must be isolated.*Single-cell isolation* is performed differently depending on the experimental protocol. While **plate-based** techniques isolate cells into wells on a plate, **droplet-based** methods rely on capturing each cell in its own microfluidic droplet. In both cases, errors can occur that lead to multiple cells being captured together (**doublets or multiplets**), nonviable cells being captured, or no cell being captured at all (**empty droplets/wells**). Empty droplets are especially common as dropletbased methods rely on a low concentration flow of input cells to control doublet rates.
+
+Each well or droplet contains the necessary chemicals to break down the cell membranes and perform library construction. Library construction* is the process in which the **intracellular mRNA is captured, reverse-transcribed to cDNA molecules and amplified**. As cells undergo this process in isolation, the mRNA from each cell can be labelled with a **well- or droplet-specific cellular barcode**. Furthermore, many experimental protocols also label captured molecules with a **unique molecular identifier (UMI)**. Cellular cDNA is amplified before sequencing to increase its probability of being measured. UMIs allow us to **distinguish between amplified copies of the same mRNA molecule and reads from separate mRNA molecules transcribed from the same gene**.
+
+After library construction, cellular cDNA libraries are labelled with cellular barcodes and, depending on the protocol, UMIs. These libraries are pooled together (**multiplexed**) for *sequencing*. Sequencing produces read data, which undergo quality control, grouping based on their assigned barcodes (**demultiplexing**) and *alignment* in read processing pipelines. For UMI-based protocols, read data can be further demultiplexed to produce **counts of captured mRNA molecules (count data)**
 
 
 
