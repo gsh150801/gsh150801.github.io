@@ -35,9 +35,17 @@ loss function就是基于这些差值的一个函数，用来评价模型预测�
 提示我们不能要求模型对于训练集的完美拟合，也可以增大训练数据量来避免
 
 
+梯度下降gradient descent
 
+随机找一个起始点x0，求dy0/dx0，
 
+如果导数为负，则图像是下降的，应该往右边移动来寻找最低点，反之则应往左移。
 
+然后从x0移动(-ηdy0/dx0)，再求导，一直到导数为0。
+
+问题：可能会陷入局部最优local optimal而非全局最优global optimal。但线性系统不存在该问题。
+
+回归见：[机器学习中的回归算法详解](https://blog.csdn.net/program_developer/article/details/79113765)
 
 
 
