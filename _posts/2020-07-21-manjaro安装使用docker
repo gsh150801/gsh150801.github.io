@@ -1,0 +1,43 @@
+---
+layout:     post
+title:      manjaro安装docker
+subtitle:   难装的rMATs，可以用docker跑
+date:       2020-07-21
+author:     Gsh
+header-img: img/post-bg-re-vs-ng2.jpg
+catalog: true
+tags:
+    - manjaro
+    - docker
+---
+
+```
+安装docker
+sudo pacman -S docker
+或者下面这条命令
+yay -S docker
+
+卸载docker
+sudo pacman -R docker
+或者
+yay -R docker
+
+启动docker
+sudo systemctl start docker.service
+设置开机启动
+sudo systemctl enable docker.service
+
+搜索某个镜像，以rMATs为例
+docker search rmats
+
+
+
+
+
+```
+
+[docker版的rmats使用教程]!(http://rnaseq-mats.sourceforge.net/rmatsdockerbeta/DockerImage-rMATS-turbo-0.1.pdf)
+
+
+
+
