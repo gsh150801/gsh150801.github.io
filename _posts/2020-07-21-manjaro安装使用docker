@@ -10,7 +10,9 @@ tags:
     - manjaro
     - docker
 ---
-
+碎碎念：渣渣装了好久的rmats，上次能用，下次打开。。。又用不了了。偶尔发现有docker版的，那。。我干啥花老大劲去安装呢？
+直接docker走起啊！
+[manjaro下docker的使用](https://blog.csdn.net/HD2killers/article/details/81042274)
 ```
 安装docker
 sudo pacman -S docker
@@ -21,23 +23,40 @@ yay -S docker
 sudo pacman -R docker
 或者
 yay -R docker
+删除docker的镜像等文件
+rm -rf /var/lib/docker
 
 启动docker
 sudo systemctl start docker.service
 设置开机启动
 sudo systemctl enable docker.service
 
-搜索某个镜像，以rMATs为例
-docker search rmats
 
-
-
+配置镜像下载源
+sudo vim /etc/docker/daemon.json
+搜索某个镜像，以python为例
+sudo docker search python
+安装某个镜像
+sudo docker pull python:3.5
+检查某个镜像是否已安装
+sudo docker image python:3.5
 
 
 ```
 
 [docker版的rmats使用教程]!(http://rnaseq-mats.sourceforge.net/rmatsdockerbeta/DockerImage-rMATS-turbo-0.1.pdf)
+这里我没从docker这个软件下镜像，直接通过rmats官网下的。
+```
+加载镜像，注意tab补齐
+docker load -i rmats-turbo-0.1.tar
+运行程序，查看帮助
+docker run rmats-turbo01 -h
 
+运行程序，需要注意的是：这段代码把/yourdatafolder目录连接到了/data目录，所以下面的文件路径都是在/data下的
+docker run -v /yourdatafolder:/data rmats:turbo01 --b1 /data/b1.txt \
+ --b2 /data/b2.txt --gtf /data/5.gtf --od /data/output -t paired \
+ --nthread 4 --readLength 101 --anchorLength 1
+```
 
 
 
