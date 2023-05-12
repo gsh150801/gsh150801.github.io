@@ -1,4 +1,14 @@
-
+---
+layout:     post
+title:      软件安装
+subtitle:   mamba安装
+date:       2023-05-12
+author:     SH
+header-img: img/post-bg-ios9-web.jpg
+catalog: 	 true
+tags:
+    - mamba
+---
 conda好用，但有时候装包太慢太慢了。   
 好在我们可以用mamba(C++版的conda)替代，实测安装软件的速度有大幅提升。
 
