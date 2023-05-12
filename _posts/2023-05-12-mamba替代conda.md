@@ -10,8 +10,10 @@ tags:
     - mamba
 ---
 conda好用，但有时候装包太慢太慢了。   
-好在我们可以用mamba(C++版的conda)替代，实测安装软件的速度有大幅提升。
-
+好在我们可以用mamba(python命令行版的conda)替代，实测安装软件的速度有大幅提升。  
+micromamba(C++版conda)的安装教程请参考[这个](https://www.cnblogs.com/huanping/p/16861271.html)   
+理论上来说，micromamba应该会更快一点。但我觉得mamba已经可以了，所以没有试过micromamba。  
+感兴趣的请自己尝试下。  
 >Tip:   
 >在安装mamba之前，需要先卸载conda。可以把conda环境导出为yaml文件，然后再在mamba里导入yaml文件建立环境。  
 >`conda env export xxx.yaml`  从当前环境导出yaml文件   
