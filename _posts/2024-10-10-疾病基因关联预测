@@ -1,0 +1,18 @@
+---
+layout:     post
+title:      疾病基因关联预测
+subtitle:   思路
+date:       2024-10-10
+author:     GSH
+header-img: img/post-bg-debug.png
+catalog: true
+tags:
+    - Compute Biology
+    - Drug Discovery
+    - Phenotype Based
+---
+
+
+疾病-基因之间的关联：
+一方面，基因可以通过翻译成蛋白质发挥功能，另一方面，基因也能通过充当非编码RNA来（对其他基因的转录翻译等过程）进行调控
+因此，要全面了解某个基因的网络，才能更准确地理解这个基因在疾病/某个细胞过程中的作用。
